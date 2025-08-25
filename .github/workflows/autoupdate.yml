@@ -1,6 +1,7 @@
 name: Update Check
 
 on:
+  push:
   schedule:
     # Every sunday
     - cron:  '0 0 * * 0'
