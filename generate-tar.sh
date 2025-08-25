@@ -8,4 +8,4 @@ fi
 filename="openwrt-tailscale-enabler-$1.tgz"
 
 # Falls back to busybox tar syntax if running on openwrt busybox tar rather than GNU tar
-tar -czvf $filename usr/ etc/ || tar c -zvf $filename usr/ etc/
+tar -czvf $filename usr/ etc/ tmp/ || tar c -zvf $filename usr/ etc/ tmp/
