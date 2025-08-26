@@ -21,7 +21,7 @@ start_service() {
   /usr/bin/tailscaled    
 
   procd_open_instance
-  procd_set_param command /tmp/usr/bin/tailscaled
+  procd_set_param command /usr/bin/tailscaled
 
   # Starting with v1.48.1 ENV variable is required to enable use of iptables / nftables.
   # Use nftables by default - can be changed to 'iptables' in tailscale config
